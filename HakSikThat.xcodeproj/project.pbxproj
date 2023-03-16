@@ -14,6 +14,10 @@
 		073CEDBD29C339100010D371 /* HakSikThatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDBC29C339100010D371 /* HakSikThatTests.swift */; };
 		073CEDC729C339100010D371 /* HakSikThatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDC629C339100010D371 /* HakSikThatUITests.swift */; };
 		073CEDC929C339100010D371 /* HakSikThatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDC829C339100010D371 /* HakSikThatUITestsLaunchTests.swift */; };
+		073CEDD629C33BD90010D371 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDD529C33BD90010D371 /* MenuView.swift */; };
+		073CEDD829C33C1A0010D371 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDD729C33C1A0010D371 /* Menu.swift */; };
+		073CEDDA29C33C280010D371 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDD929C33C280010D371 /* ModelData.swift */; };
+		073CEDDF29C33FBB0010D371 /* menutest.json in Resources */ = {isa = PBXBuildFile; fileRef = 073CEDDE29C33FBB0010D371 /* menutest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		073CEDC229C339100010D371 /* HakSikThatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HakSikThatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073CEDC629C339100010D371 /* HakSikThatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HakSikThatUITests.swift; sourceTree = "<group>"; };
 		073CEDC829C339100010D371 /* HakSikThatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HakSikThatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		073CEDD529C33BD90010D371 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		073CEDD729C33C1A0010D371 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		073CEDD929C33C280010D371 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		073CEDDE29C33FBB0010D371 /* menutest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menutest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,9 @@
 			children = (
 				073CEDAB29C3390F0010D371 /* HakSikThatApp.swift */,
 				073CEDAD29C3390F0010D371 /* ContentView.swift */,
+				073CEDD529C33BD90010D371 /* MenuView.swift */,
+				073CEDDC29C33CC20010D371 /* Resources */,
+				073CEDDB29C33C2C0010D371 /* Model */,
 				073CEDAF29C339100010D371 /* Assets.xcassets */,
 				073CEDB129C339100010D371 /* Preview Content */,
 			);
@@ -125,6 +136,23 @@
 				073CEDC829C339100010D371 /* HakSikThatUITestsLaunchTests.swift */,
 			);
 			path = HakSikThatUITests;
+			sourceTree = "<group>";
+		};
+		073CEDDB29C33C2C0010D371 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				073CEDD729C33C1A0010D371 /* Menu.swift */,
+				073CEDD929C33C280010D371 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		073CEDDC29C33CC20010D371 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				073CEDDE29C33FBB0010D371 /* menutest.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +261,7 @@
 			files = (
 				073CEDB329C339100010D371 /* Preview Assets.xcassets in Resources */,
 				073CEDB029C339100010D371 /* Assets.xcassets in Resources */,
+				073CEDDF29C33FBB0010D371 /* menutest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073CEDD629C33BD90010D371 /* MenuView.swift in Sources */,
 				073CEDAE29C3390F0010D371 /* ContentView.swift in Sources */,
+				073CEDDA29C33C280010D371 /* ModelData.swift in Sources */,
+				073CEDD829C33C1A0010D371 /* Menu.swift in Sources */,
 				073CEDAC29C3390F0010D371 /* HakSikThatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
