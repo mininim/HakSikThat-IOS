@@ -18,6 +18,7 @@
 		073CEDD829C33C1A0010D371 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDD729C33C1A0010D371 /* Menu.swift */; };
 		073CEDDA29C33C280010D371 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CEDD929C33C280010D371 /* ModelData.swift */; };
 		073CEDDF29C33FBB0010D371 /* menutest.json in Resources */ = {isa = PBXBuildFile; fileRef = 073CEDDE29C33FBB0010D371 /* menutest.json */; };
+		0745718929C488FE0025CA05 /* MyAfterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745718829C488FE0025CA05 /* MyAfterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		073CEDD729C33C1A0010D371 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		073CEDD929C33C280010D371 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		073CEDDE29C33FBB0010D371 /* menutest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menutest.json; sourceTree = "<group>"; };
+		0745718829C488FE0025CA05 /* MyAfterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAfterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				073CEDAB29C3390F0010D371 /* HakSikThatApp.swift */,
 				073CEDAD29C3390F0010D371 /* ContentView.swift */,
 				073CEDD529C33BD90010D371 /* MenuView.swift */,
+				0745718829C488FE0025CA05 /* MyAfterView.swift */,
 				073CEDDC29C33CC20010D371 /* Resources */,
 				073CEDDB29C33C2C0010D371 /* Model */,
 				073CEDAF29C339100010D371 /* Assets.xcassets */,
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073CEDD629C33BD90010D371 /* MenuView.swift in Sources */,
+				0745718929C488FE0025CA05 /* MyAfterView.swift in Sources */,
 				073CEDAE29C3390F0010D371 /* ContentView.swift in Sources */,
 				073CEDDA29C33C280010D371 /* ModelData.swift in Sources */,
 				073CEDD829C33C1A0010D371 /* Menu.swift in Sources */,

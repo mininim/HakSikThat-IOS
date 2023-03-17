@@ -11,7 +11,15 @@ struct MenuView: View {
     var menus : Menu
     
     var body: some View {
-        Text(menus.foods)
+        VStack{
+            
+            Text(menus.foods)
+            Text(menus.location)
+            Text("\(menus.cost) 원")
+            Text("\(menus.kcal) Kcal")
+            
+        }
+        
     }
 }
 
