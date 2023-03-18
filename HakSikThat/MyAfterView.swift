@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct MyAfterView: View {
-    @State
-    private var index = 0
+    @Binding var isActivated : Bool
+    
+    init(isActivated: Binding<Bool> = .constant(true)) {
+        _isActivated = isActivated
+    }
+    
+    
+    @State private var index = 0
+    
+    
     
     private var backgroundColors = [
         
@@ -28,15 +36,21 @@ struct MyAfterView: View {
             Text("마시쪙")
                 .font(.system(size: 30))
                 .fontWeight(.bold)
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 60)
+            Text("활성화 상태 : \(String(isActivated ))")
+                .font(.system(size: 30))
+                .fontWeight(.bold)
+                .foregroundColor(isActivated ? Color.yellow : Color.gray)
             Spacer()
             
         }.background(backgroundColors[index])
             .onTapGesture {
                 
-                index += 1
-                if index > 5 {
-                    index = 0
+                
+                if (self.index == self.backgroundColors.count - 1) {
+                    self.index = 0
+                }else{
+                    self.index += 1
                 }
             }
         

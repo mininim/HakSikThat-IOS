@@ -15,25 +15,34 @@ struct ContentView: View {
         
         NavigationView {
             
-            VStack{
+            VStack{ 
                 TabView {
                     
                     VStack{
-                        MenuView(menus: ModelData().menus[0])
-                        MenuView(menus: ModelData().menus[0])
+                        Spacer()
+                        MenuView(isActivated: $isActivated, menus: ModelData().menus[0])
+                        Spacer()
+                        MenuView(isActivated: $isActivated, menus: ModelData().menus[1])
+                        Spacer()
                     }
                     VStack{
-                        MenuView(menus: ModelData().menus[1])
-                        MenuView(menus: ModelData().menus[1])
+                        Spacer()
+                        MenuView(isActivated: $isActivated, menus: ModelData().menus[0])
+                        Spacer()
+                        MenuView(isActivated: $isActivated, menus: ModelData().menus[0])
+                        Spacer()
                     }
                     VStack{
-                        MenuView(menus: ModelData().menus[1])
-                        MenuView(menus: ModelData().menus[0])
+                        Spacer()
+                        MenuView(isActivated: $isActivated, menus: ModelData().menus[0])
+                        Spacer()
+                        MenuView(isActivated: $isActivated, menus: ModelData().menus[0])
+                        Spacer()
                     }
                     
                     
                 }//Tabview
-                .padding(isActivated ? 20 : 10)
+                .padding(isActivated ? 100 : 10)
                 .background(isActivated ? Color.blue : Color.yellow)
                 .onTapGesture {
                     print("눌렀냐?")
@@ -45,7 +54,7 @@ struct ContentView: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 
                 
-                NavigationLink(destination: MyAfterView()) {
+                NavigationLink(destination: MyAfterView(isActivated: $isActivated)) {
                     Text("맛있어?")
                 }
             }
